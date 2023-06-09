@@ -1,0 +1,1 @@
+export type FunctionBoolean = (...args: any) => boolean
