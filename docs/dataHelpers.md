@@ -26,7 +26,6 @@ The findBy function is a higher-order function that returns a new function. This
 Usage:
 
 ```typescript
-Copy code
 const conditions = { /* specify your conditions here */ }
 const items = [ /* array of items to search within */ ]
 const foundItem = findBy(conditions)(items)
@@ -39,7 +38,6 @@ The removeFindBy function removes an item from an array if it satisfies the spec
 Usage:
 
 ```typescript
-Copy code
 const items = [ /* array of items to modify */ ]
 const conditions = { /* specify your conditions here */ }
 const updatedItems = removeFindBy(items, conditions)
@@ -52,7 +50,6 @@ The updateFindBy function updates an item in an array based on specified conditi
 Usage:
 
 ```typescript
-Copy code
 const newItem = { /* specify your new item here */ }
 const items = [ /* array of items to modify */ ]
 const conditions = { /* specify your conditions here */ }
@@ -66,7 +63,6 @@ The updateFind function updates an item in an array based on a specific key-valu
 Usage:
 
 ```typescript
-Copy code
 const newItem = { /* specify your new item here */ }
 const newItemKey = 'id' // Specify the key to match with existing items
 const items = [ /* array of items to modify */ ]
@@ -80,7 +76,6 @@ The addItem function adds an item to an existing array at a specified key. It mo
 Usage:
 
 ```typescript
-Copy code
 const item = { /* specify your new item here */ }
 const items = { /* object containing the array */ }
 const key = 'keyName' // Specify the key where the array is located within the items object
@@ -94,7 +89,6 @@ The addItemIfNotExists function adds an item to an existing array if the item do
 Usage:
 
 ```typescript
-Copy code
 const newItem = { /* specify your new item here */ }
 const conditions = { /* specify your conditions here */ }
 const items = { /* object containing the array */ }
@@ -109,7 +103,6 @@ The addItems function adds multiple items to an existing array. It modifies the 
 Usage:
 
 ```typescript
-Copy code
 const newItems = [ /* specify your new items here */ ]
 const items = { /* object containing the array */ }
 const key = 'keyName' // Specify the key where the array is located within the items object
@@ -123,7 +116,6 @@ The setItem function sets the value of a specified key in an object. It modifies
 Usage:
 
 ```typescript
-Copy code
 const item = { /* specify your item here */ }
 const items = { /* object to modify */ }
 const key = 'keyName' // Specify the key to set the item
@@ -137,7 +129,6 @@ The setAllItems function sets an entire array as the value of a specified key in
 Usage:
 
 ```typescript
-Copy code
 const newItems = [ /* specify your new items here */ ]
 const items = { /* object to modify */ }
 const key = 'keyName' // Specify the key to set the array
@@ -151,7 +142,6 @@ The removeItemById function removes an item from an array based on its ID proper
 Usage:
 
 ```typescript
-Copy code
 const itemId = 'idValue' // Specify the ID of the item to remove
 const items = { /* object containing the array */ }
 const key = 'keyName' // Specify the key where the array is located within the items object
@@ -165,7 +155,6 @@ The updateItem function updates an item in an array based on its properties. It 
 Usage:
 
 ```typescript
-Copy code
 const item = { /* specify the updated item here */ }
 const items = { /* object containing the array */ }
 const key = 'keyName' // Specify the key where the array is located within the items object
@@ -179,7 +168,6 @@ The updateItems function updates multiple items in an array based on their prope
 Usage:
 
 ```typescript
-Copy code
 const newItems = [ /* specify the updated items here */ ]
 const items = { /* object containing the array */ }
 const key = 'keyName' // Specify the key where the array is located within the items object
@@ -193,7 +181,6 @@ The replaceItem function replaces an entire object with a new object. It modifie
 Usage:
 
 ```typescript
-Copy code
 const item = { /* specify the new item here */ }
 const items = { /* object to modify */ }
 replaceItem(item)(items)
@@ -206,7 +193,6 @@ The serializeObject function merges two objects together, filtering out keys tha
 Usage:
 
 ```typescript
-Copy code
 const objectToMerge = { /* specify the object to merge here */ }
 const existingObject = { /* specify the existing object here */ }
 const mergedObject = serializeObject(objectToMerge, existingObject)
