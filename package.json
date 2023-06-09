@@ -1,0 +1,10 @@
+{
+  "name": "@voudo/handy-kit",
+  "version": "1.0.0",
+  "description": "A handy kit of simple Typescript/Javascript tools.",
+  "main": "index.ts",
+  "repository": "https://github.com/Voudo/handy-kit.git",
+  "author": "chad@voudo.com",
+  "license": "MIT",
+  "private": false
+}
